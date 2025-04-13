@@ -1,0 +1,83 @@
+.animate-navbar {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.animate-navbar.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.navbar {
+  z-index: 1050; /* Pastikan navbar selalu di atas konten lain */
+}
+
+.baground-gradient {
+  background: #0d6efd;
+  background: linear-gradient(
+    200deg,
+    rgba(13, 110, 253, 1) 0%,
+    rgba(255, 255, 255, 1) 40%
+  );
+  padding-top: 5px;
+}
+
+section {
+  scroll-margin-top: 60px; /* Sesuaikan dengan tinggi navbar kamu */
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-loading {
+  width: 100px;
+  height: auto;
+  animation: pulse 1.5s infinite ease-in-out;
+  opacity: 0.9;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+header {
+  z-index: -1;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 300px;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+section {
+  overflow: visible;
+}
+
+
+  .custom-margin-top {
+    margin-top: 110px; /* Sesuaikan nilai margin sesuai kebutuhan */
+  }
